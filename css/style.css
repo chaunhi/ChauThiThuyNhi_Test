@@ -1,0 +1,378 @@
+@charset "UTF-8";
+* { margin: 0; padding: 0; }
+
+body { font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif; font-size: 16px; }
+
+/*------------------@extend-----------------*/
+.center, .container, .container-tv, #service .point, #contents .point, #contents .border, #incident .content-incident, #incident .border-incident, #footer .content-footer { display: block; margin: 0 auto; }
+
+.flex, .header_right .border-mail { display: flex; justify-content: center; }
+
+.title, #service .title, #contents .title { font-size: 26px; font-family: "Meiryo"; text-align: center; }
+
+.mail, .header_right .border-mail, #contents .border .border-items { background-color: #ffed4d; width: 259px; height: 43px; z-index: 42; }
+.mail img, .header_right .border-mail img, #contents .border .border-items img { float: left; width: 18px; height: 14px; padding-top: 13px; }
+.mail p, .header_right .border-mail p, #contents .border .border-items p { font-size: 14px; padding-left: 10px; font-family: "Meiryo"; color: #fd7e00; font-weight: bold; line-height: 3.1; text-align: left; }
+
+/*------------------end @extend---------------------------*/
+/*------------------@import header top--------------------*/
+/*------------------border top-----------------*/
+.top { min-width: 950px; width: auto; height: 4px; background: #0f5c9b; }
+
+/*-----------container index and tv------------*/
+.container { width: 950px; height: 179px; background-color: white; }
+
+.container-tv { width: 950px; height: 179px; background-color: white; }
+
+/*-------------header components--------------*/
+.logo { height: auto; z-index: 46; padding-left: 10px; padding-top: 18px; float: left; }
+
+.header_left { float: left; }
+.header_left .IT_NETWORK { padding: 28px 0px 0px 23px; font-size: 32px; color: #878787; font-weight: bold; line-height: 1.2; letter-spacing: 2px; text-align: left; }
+.header_left .slogan { padding-left: 29px; font-size: 15px; color: black; font-weight: bold; line-height: 1.2; text-align: left; letter-spacing: -1px; }
+
+.header_call { float: left; padding-top: 36px; padding-right: 20px; }
+
+.header_right { float: right; }
+.header_right .border-mail { width: 259px; height: 43px; float: left; margin-top: 36px; }
+.header_right .border-mail:hover { opacity: 0.7; }
+
+/*-------------header menu--------------*/
+.mobile-menu { display: block; line-height: 1.6em; font-weight: 500; text-align: center; clear: both; /*-------------icon menu--------------*/ }
+.mobile-menu .dot { background: url("../images/space_menu.png") no-repeat right; width: 298px; }
+.mobile-menu .hover { display: none; }
+.mobile-menu .br-menu { display: none; }
+.mobile-menu .icon { display: none; }
+.mobile-menu li { display: inline-block; }
+.mobile-menu li:hover { border-bottom: 4px solid #dddddd; }
+.mobile-menu li:hover .not-hover { display: none; }
+.mobile-menu li:hover .hover { display: block; }
+.mobile-menu li:hover .hover:hover { padding: 11px 10px; }
+.mobile-menu li:hover .not-hover { display: none; }
+.mobile-menu li a { width: auto; background: url("../images/space_menu.png") no-repeat left; font-size: 13px; color: black; margin-left: -3px; padding: 11px 10.6px; display: block; min-width: 140px; text-align: center; font-weight: bold; text-transform: uppercase; text-decoration: none; -webkit-transition: all 0.4s ease 0s; -moz-transition: all 0.4s ease 0s; -ms-transition: all 0.4s ease 0s; transition: all 0.4s ease 0s; }
+.mobile-menu li a p { color: #0e5b9a; font-size: 12px !important; letter-spacing: 1px; font-weight: 500; }
+.mobile-menu li:hover ul a { background: #f3f3f3; color: #2f3036; height: 40px; line-height: 40px; }
+.mobile-menu .show-menu { background: #0f5c9b; padding: 13px 15px; display: none; cursor: pointer; }
+.mobile-menu .show-menu span { padding-left: 35px; }
+.mobile-menu input[type=checkbox] { display: none; }
+.mobile-menu input[type=checkbox]:checked ~ #menu { display: block; }
+.mobile-menu .containers { cursor: pointer; }
+.mobile-menu .bar1, .mobile-menu .bar2, .mobile-menu .bar3 { width: 35px; height: 5px; background-color: #ffffff; margin: 6px 0; transition: 0.4s; }
+.mobile-menu .change .bar1 { -webkit-transform: rotate(-45deg) translate(-8px, 8px); -moz-transform: rotate(-45deg) translate(-8px, 8px); -ms-transform: rotate(-45deg) translate(-8px, 8px); transform: rotate(-45deg) translate(-8px, 8px); }
+.mobile-menu .change .bar2 { opacity: 0; }
+.mobile-menu .change .bar3 { -webkit-transform: rotate(45deg) translate(-7px, -8px); -moz-transform: rotate(45deg) translate(-7px, -8px); -ms-transform: rotate(45deg) translate(-7px, -8px) !important; transform: rotate(45deg) translate(-7px, -8px); }
+
+/*-------------end header--------------*/
+/*------------------@import content index-----------------*/
+/*------------------slider index---------------------*/
+#slider { min-width: 950px; height: 420px; display: flex; background: url("../images/slideshow.png") no-repeat center center; }
+#slider .slider { border: 1px solid #ffffff; width: 660px; height: 62px; margin: 0 auto; margin-top: 163px; }
+#slider .slider p { text-align: center; padding-top: 9px; font-size: 29px; color: white; }
+#slider img { display: none; }
+
+/*------------------content-index-----------------*/
+#content-index { width: 950px; margin: 0px auto; }
+#content-index .border_content { margin: 80px 0px; border: 1px solid #dddddd; height: 160px; }
+#content-index .border_content button { padding: 3px 16px 3px 6px; background-color: #0f5c9b; color: #ffffff; border-color: #0f5c9b; box-shadow: none; border-style: none; cursor: pointer; }
+#content-index .border_content button:hover { opacity: 0.7; }
+#content-index .content_left { width: 240px; padding-top: 46px; height: 112px; float: left; text-align: center; background: url("../images/space_content.png") no-repeat right center; }
+#content-index .content_left .title { font-size: 20px; font-weight: 500; }
+#content-index .content_left .news { font-size: 12px; color: #0e5b9a; font-weight: 500; }
+#content-index .content_right { padding: 41px 0px 0px 46px; float: left; }
+#content-index .content_right .date { color: #0e5b9a; font-weight: 500; }
+#content-index .content_right .text { color: black !important; border-bottom: 1px solid black; text-decoration: none; }
+#content-index br, #content-index .button-mb { display: none; }
+
+/*-----------------content-construction-------------------*/
+#construction { clear: both; min-width: 950px; height: 570px; background-color: #eeeeee; }
+#construction .construction { width: 950px; margin: 0 auto; }
+#construction .content_construction { text-align: center; padding: 59px 0px; }
+#construction .content_construction p:nth-child(2) { font-size: 14px; color: #0e5b9a; padding-top: 10px; padding-bottom: 20px; font-weight: 500; }
+#construction .content_construction p:nth-child(3) { font-size: 16px; font-family: "Meiryo"; color: #555555; }
+#construction .items { display: flex; justify-content: center; }
+#construction .items .item_border { background: url(../images/background_border.png) no-repeat; width: 220px; height: 226px; position: relative; margin-right: 109px; }
+#construction .items .item_borders { background: url(../images/background_border.png) no-repeat; width: 220px; height: 226px; position: relative; }
+#construction .items .hover { display: none; }
+#construction .item { height: 214px; width: 208px; float: left; text-align: center; }
+#construction .item:hover { position: relative; background: #0f5c9b; }
+#construction .item:hover .hover { display: inline; }
+#construction .item:hover .home-pc { display: none; }
+#construction .item:hover button { background-color: #ffffff; color: #0f5c9b; border-color: #ffffff; }
+#construction .item:hover p { color: #ffffff; }
+#construction .item img { padding-top: 52px; }
+#construction .item p { color: #0f5c9b; font-weight: bold; }
+#construction .item button { padding: 3px 16px 3px 6px; background-color: #0f5c9b; color: #ffffff; border-color: #0f5c9b; box-shadow: none; border-style: none; cursor: pointer; }
+#construction .item1, #construction .item2, #construction .item3 { position: absolute; margin-top: 6px; margin-left: 6px; }
+
+/*------------content-alsok----------------*/
+.alsok { height: 404px; width: 950px; margin: 0 auto; }
+.alsok .left { padding-top: 17px; }
+.alsok .right { display: block; float: right; }
+.alsok .right p:first-child { font-size: 20px; color: black; font-weight: bold; padding: 77px 0px 32px; }
+.alsok .right p:nth-child(2) { font-size: 16px; font-family: "Meiryo"; color: #545454; padding-bottom: 30px; }
+.alsok .right button { padding: 3px 16px 3px 6px; background-color: #0f5c9b; font-size: 16px; font-family: "Meiryo"; color: white; border-color: #0f5c9b; box-shadow: none; border-style: none; cursor: pointer; text-align: center; font-weight: 500; width: 350px; height: 50px; }
+.alsok .right button:hover { opacity: 0.7; }
+
+.pc img { display: block; }
+
+.mb img { display: none; width: 100%; }
+
+/*------------------end content index--------------------*/
+/*------------------@import content tv--------------------*/
+/*------------------mainimage-----------------*/
+#mainimage { min-width: 950px; height: 160px; background: url("../images/bg.png") no-repeat right top; }
+#mainimage p { font-size: 28px; font-family: "Meiryo"; color: white; line-height: 6.2; text-align: center; }
+#mainimage p br { display: none; }
+
+/*------------------top-title-----------------*/
+#top-title { min-width: 950px; border-bottom: 1px solid #dddddd; height: 37px; }
+#top-title .top-title { margin: 0 auto; width: 950px; font-size: 12px; font-family: "Meiryo"; line-height: 3; }
+#top-title .top-title a { border-bottom: 1px solid #0c5999; height: 25px; float: left; text-decoration: none; color: #0c5999; }
+
+/*------------------service-----------------*/
+#service { min-width: 950px; height: 513px; padding-bottom: 46px; }
+#service .title { padding-top: 62px; }
+#service .point { padding: 14px 0px 44px; }
+#service .caption { font-size: 16px; font-family: "Meiryo"; text-align: center; color: #525252; padding-bottom: 46px; }
+#service table { margin: 0 auto; border-collapse: collapse; }
+#service table tbody { width: 950px; }
+#service table tbody td { font-size: 16px; font-family: "Meiryo"; padding: 0px 0px 84px 17px; }
+#service table tbody td:nth-child(3) { padding-top: 16px !important; }
+#service table tbody th { background-color: #0e5b9a; font-size: 16px; font-family: "Meiryo"; font-weight: normal; color: white; padding: 16px 0px; }
+#service table tbody th:nth-child(1) { width: 259px; }
+#service table tbody th:nth-child(2) { width: 219px; }
+#service table tbody th:nth-child(3) { width: 472px; }
+#service table tbody th, #service table tbody tr, #service table tbody td { border: 1px solid #cccccc; border-collapse: collapse; }
+
+/*------------------contents-----------------*/
+#contents { clear: both; min-width: 950px; height: 1460px; background-color: #eeeeee; }
+#contents .title { padding-top: 62px; }
+#contents .point { padding: 16px 0px 44px 0px; }
+#contents .border:nth-child(3) { height: 251px !important; }
+#contents .border { height: 210px; width: 950px; background-color: #ffffff; margin-bottom: 30px; }
+#contents .border .left { float: left; }
+#contents .border .number { float: left; padding: 25px 10px 0px 25px; }
+#contents .border .name { padding-top: 30px; font-size: 23px; color: #0e5b9a; font-weight: 500; }
+#contents .border .content { padding-top: 29px; padding-left: 25px; font-size: 16px; font-family: "Meiryo"; }
+#contents .border .light { color: #0e5b9a; font-weight: 500px; }
+#contents .border .tv { float: right; padding: 25px; }
+#contents .border .border-item { float: left; border: 1px solid #0e5b9a; width: 284px; height: 48px; margin: 30px 0px 0px 25px; }
+#contents .border .border-item img { padding: 5px 0px 0px 32px; }
+#contents .border .border-item p { font-size: 10px; font-family: "Meiryo"; color: #0e5b9a; text-align: center; line-height: 5px; }
+#contents .border .border-items { float: left; width: 280px; height: 50px; padding-left: 15px; margin: 30px 0px 0px 14px; }
+#contents .border .border-items img { padding: 17px 12px 0px 6px; }
+#contents .border .border-items p { padding-top: 2px; font-size: 16px; }
+
+/*------------------incident-----------------*/
+#incident { clear: both; height: 298px; }
+#incident .content-incident { display: flow-root; height: 298px; width: 950px; }
+#incident .border-incident { border: 1px solid #0f5c9b; width: 538px; height: 58px; padding-top: 10px; margin-top: 62px; }
+#incident .border-incident p { line-height: 52px; font-size: 24px; color: #0f5c9b; font-weight: bold; text-align: center; }
+#incident .text { text-align: center; font-size: 16px; line-height: 23px; padding-bottom: 82px; padding-top: 45px; }
+#incident .text span { font-size: 22px; color: #0f5c9b; }
+
+/*------------------end content tv--------------------*/
+/*------------------@import footer------------------------*/
+/*-------------footer components--------------*/
+#footer { clear: both; min-width: 950px; height: 358px; background: url("../images/background_footer.png") no-repeat; /*-------------footer black-top--------------*/ }
+#footer .content-ft { display: flex; }
+#footer .content-footer { width: 950px; display: inline-block; height: 358px; position: relative; }
+#footer .border-footer { margin: 0 auto; border: 1px solid #b5c8dd; width: 480px; height: 60px; padding-top: 10px; margin-top: 62px; }
+#footer .border-footer p { line-height: 52px; font-size: 24px; color: #ffffff; font-weight: 500; text-align: center; }
+#footer .text { text-align: center; font-size: 16px; color: #ffffff; font-family: "Meiryo"; line-height: 23px; padding-bottom: 20px; padding-top: 28px; }
+#footer .text span { color: #ebee57; }
+#footer .center-item { display: flex; justify-content: center; }
+#footer .item { padding-left: 49px; float: left; }
+#footer .item p { font-size: 11.7px; font-family: "Meiryo"; color: #ffffff; }
+#footer .border-item { float: left; background-color: #ffed4d; width: 296px; height: 50px; margin: 0px 0px 49px 68px; }
+#footer .border-item:hover { opacity: 0.9; }
+#footer .border-item img { float: left; padding: 17px 12px 0px 20px; }
+#footer .border-item p { padding-left: 10px; font-family: "Meiryo"; color: #fd7e00; font-weight: 500; line-height: 3.1; padding-top: 2px; font-size: 16px; }
+#footer .black { position: relative; text-align: right; bottom: 82px; }
+#footer .black-top { font-weight: 500; text-align: center; font-size: 13px; text-decoration: none; color: #ffffff; padding: 43px 12px 24px; }
+#footer .black-top:hover { border: 1px solid #ffffff; background: #ffffff; color: #0f5c9b; font-weight: 500; }
+#footer .fa-caret-up { position: absolute; right: 40px; bottom: 30px; }
+
+/*-------------menu-footer--------------*/
+#menu-footer { min-width: 950px; height: 120px; background-color: #cccccc; }
+#menu-footer .menu { width: 920px; margin: 0 auto; }
+#menu-footer .menu ul { list-style-type: none; text-align: center; display: inline-block; margin-top: 27px; }
+#menu-footer .menu li { border-left: 1px solid black; font-size: 15px; font-family: "Meiryo"; color: #222222; display: inline-block; text-align: center; height: 18px; margin-top: 10px; margin-left: -5px; }
+#menu-footer .menu li:nth-child(4), #menu-footer .menu li:nth-child(7) { border-right: 1px solid black; }
+#menu-footer .menu a { text-decoration: none; color: #222222; display: block; line-height: 17px; padding: 0px 30px; }
+
+/*------------------copyright-----------------*/
+#copyright { min-width: 950px; height: 55px; }
+#copyright p { font-size: 14px; font-family: "Meiryo"; color: #212121; padding-top: 18px; text-align: center; }
+
+/*------------------end footer-----------------*/
+/*------------------@import responsive index and tv-------*/
+@media only screen and (max-width: 768px) and (min-width: 320px) { /*-----------------header-------------------*/
+  #header .top { min-width: auto; height: 10px; }
+  .container { width: auto; height: 0px; }
+  .container-tv { width: auto; height: 108px; }
+  .container .header_left, .container-tv .header_left { float: none; }
+  .container .header_right, .container-tv .header_right { display: none; }
+  .container .slogan, .container-tv .slogan { padding-left: 63px; font-size: 12px !important; }
+  .container .IT_NETWORK, .container-tv .IT_NETWORK { padding: 28px 0px 0px 59px; font-size: 23px !important; }
+  .mobile-menu .lines { border-bottom: 15px double #f8f8f8; border-top: 5px solid #f8f8f8; content: ""; height: 5px; width: 20px; padding-right: 15px; float: right; }
+  .mobile-menu ul { background-color: #0f5c9b; position: relative; display: none; z-index: 1; }
+  .mobile-menu ul .icon { display: inline; position: relative; left: -8px; }
+  .mobile-menu ul .icon-last { top: 10px; }
+  .mobile-menu ul .br-menu { display: inherit; }
+  .mobile-menu li { width: 89% !important; border-bottom: 1px dotted #fefeff !important; }
+  .mobile-menu li .not-hover { display: none; }
+  .mobile-menu li .hover { display: block; }
+  .mobile-menu li:hover { border-bottom: none; }
+  .mobile-menu li:hover .not-hover { display: none; }
+  .mobile-menu li a { width: 100%; background: none; text-align: left; color: #ffffff; }
+  .mobile-menu li p { display: none; }
+  .mobile-menu .show-menu { display: block; margin-top: -84px; float: right; margin-right: 4%; border-radius: 6px; }
+  .mobile-menu .dot { background: none; margin-bottom: 79%; }
+  .mobile-menu .dotted { border-top: 1px dotted white; margin-top: 7%; }
+  /*-----------------end header-------------------*/
+  /*-----------------footer-------------------*/
+  #footer { min-width: auto; clear: both; height: auto; background: url(../images/background_footer.png) no-repeat center; }
+  #footer .content-footer { width: auto; display: flow-root; }
+  #footer .content-footer .border-footer { width: 308px; margin-top: 28px; padding-top: 0; height: auto; }
+  #footer .content-footer .border-footer p { font-size: 17px; }
+  #footer .content-footer .text { padding: 28px 18px 20px; }
+  #footer .content-footer .item { padding-left: 0; float: none; text-align: center; }
+  #footer .content-footer .center-item { display: block; }
+  #footer .content-footer .border-item { float: none; margin-top: 4%; background-color: #ffed4d; width: 250px; height: 40px; margin: 0 auto; }
+  #footer .content-footer .border-item p { font-size: 12px; }
+  #footer .content-footer .border-item img { padding: 12px 12px 0px 20px; }
+  #footer .content-footer .black { display: none; }
+  /*-----------------menu footer-------------------*/
+  #menu-footer { min-width: auto; height: auto; }
+  #menu-footer .menu { width: auto; margin: 0 auto; }
+  #menu-footer .menu ul { margin-top: 15px; margin-bottom: 15px; }
+  #menu-footer .menu li { font-size: 14px; font-family: "Hiragino Kaku Gothic Pro"; height: 18px; margin-top: 0; }
+  #copyright { min-width: auto; }
+  /*-----------------end footer-------------------*/
+  /*================CONTENT OF INDEX=============*/
+  /*-------------------slider--------------------*/
+  #slider { min-width: auto; width: 100%; padding-bottom: 21%; height: auto; display: flex; background: url(../images/slideshow.png) no-repeat center bottom; }
+  #slider .slider { display: none; }
+  #slider .img-mb { margin: 0 auto; }
+  #slider .img-mb img { width: 100%; height: auto; padding-top: 20%; display: block; }
+  /*-------------------end slider---------------------*/
+  /*------------------content-index-----------------*/
+  #content-index { width: auto; margin: 0px auto; padding: 0px 20px; }
+  #content-index .border_content { margin: 28px 0px; min-height: 556px; }
+  #content-index .border_content .content_left { width: auto; height: auto; float: none; background: none; }
+  #content-index .border_content .content_left .title { font-size: 30px; font-weight: 500; }
+  #content-index .border_content .content_left .news { font-size: 19px; color: #0e5b9a; font-weight: 500; }
+  #content-index .border_content .content_left .button { display: none; }
+  #content-index .border_content .content_right { font-size: 20px; font-family: "Hiragino Kaku Gothic Pro"; color: #0d5a99; float: none; padding: 31px 26px 0px 26px; }
+  #content-index .border_content .content_right p { padding: 10px 0px; border-top: 1px dotted #cccccc; }
+  #content-index .border_content .content_right p:last-child { border-bottom: 1px dotted #cccccc; }
+  #content-index .border_content .content_right p br { display: block; }
+  #content-index .border_content .content_right .date { color: #0e5b9a; font-weight: 500; }
+  #content-index .border_content .content_right .text { color: black !important; border-bottom: 1px solid black; text-decoration: none; }
+  #content-index .border_content .button-mb { display: flex; justify-content: center; margin-top: 4%; }
+  /*------------------end content-index-----------------*/
+  /*---------------content-construction----------------*/
+  #construction { min-width: auto; }
+  #construction .construction { width: auto; }
+  #construction .content_construction { text-align: center; padding: 59px 32px; }
+  #construction .content_construction h2 { font-size: 30px; letter-spacing: -4px; }
+  #construction .content_construction p:nth-child(2) { font-size: 19px; color: #0e5b9a; padding-top: 10px; padding-bottom: 20px; font-weight: 500; }
+  #construction .content_construction p:nth-child(3) { font-size: 18px; font-family: "Hiragino Kaku Gothic Pro"; color: #555555; }
+  #construction .item_construction .items { display: flex; justify-content: center; }
+  #construction .item_construction .items .item_border { display: flex; justify-content: center; background: url(../images/background_border-mb.png) no-repeat; width: 100%; background-size: 100%; min-height: 276px; padding-top: 36px; margin-left: 9px; margin-right: 0px; }
+  #construction .item_construction .items .item_borders { background: url(../images/background_border-mb.png) no-repeat; width: 106%; width: 100%; background-size: 100%; height: auto; margin-right: 10px; margin-left: 10px; }
+  #construction .item_construction .item { height: 0px; width: 83px; float: left; text-align: center; }
+  #construction .item_construction .item .home-pc { display: inline-block; }
+  #construction .item_construction .item .hover { display: none; }
+  #construction .item_construction .item img { padding-top: 0px; }
+  #construction .item_construction .item p { color: #0f5c9b; font-weight: bold; }
+  #construction .item_construction .item button { padding: 3px 16px 3px 6px; background-color: #0f5c9b; color: #ffffff; border-color: #0f5c9b; box-shadow: none; border-style: none; cursor: pointer; }
+  #construction .item_construction .item1, #construction .item_construction .item2, #construction .item_construction .item3 { position: absolute; margin-top: 6px; margin-left: 0; }
+  #construction .item_construction .item3 { display: contents; padding-top: 35px; }
+  #construction .item_construction .item2 { margin-top: 8px; }
+  /*------------end content-construction------------*/
+  /*--------------------alsok------------------------*/
+  .pc img { display: none; }
+  .alsok { height: auto; width: auto; }
+  .alsok .right { float: none; text-align: center; }
+  .alsok .right p:first-child { font-size: 19px; padding: 36px 0px 32px; }
+  .alsok .right p:nth-child(2) { font-size: 14px; font-family: "Hiragino Kaku Gothic Pro"; color: #535353; }
+  .alsok .right button { font-size: 13px; width: 275px; height: 40px; }
+  .alsok .mb img { display: block; width: 88%; }
+  /*--------------------end alsok------------------------*/
+  /*===================CONTENT OF TV====================*/
+  /*-------------------mainimage-----------------------*/
+  #mainimage { min-width: auto; }
+  #mainimage p { font-size: 36px; padding-top: 30px; line-height: 1.2; }
+  #mainimage p br { display: block; }
+  /*------------------end mainimage-------------------*/
+  /*-------------------top-title---------------------*/
+  #top-title { display: none; }
+  .title, #service .title, #contents .title { font-size: 36px; font-family: "Hiragino Kaku Gothic Pro"; padding-top: 42px; }
+  /*-----------------contents-------------------*/
+  #contents { min-width: auto; height: auto; padding-bottom: 3px; }
+  #contents .border { height: auto; width: auto; margin: 0px 23px 29px; position: relative; }
+  #contents .border .left { float: none !important; }
+  #contents .border #tv { clear: both; display: flex; justify-content: center; }
+  #contents .border:nth-child(3) { height: auto !important; }
+  #contents .border:nth-child(3) .tv { padding-top: 25px; }
+  #contents .border:nth-child(3) #tv { clear: both; display: flex; justify-content: center; }
+  #contents .border .name { font-size: 20px; position: absolute; left: 89px; top: 2px; font-family: "Hiragino Kaku Gothic Pro"; }
+  #contents .border .tv { width: -webkit-fill-available; width: 90%; float: none; }
+  #contents .border-item { float: none !important; margin: 0 auto !important; width: 91% !important; height: 59px !important; }
+  #contents .border-item .center, #contents .border-item .container, #contents .border-item .container-tv, #contents .border-item .point, #contents .border-item .border, #contents .border-item #incident .content-incident, #incident #contents .border-item .content-incident, #contents .border-item #incident .border-incident, #incident #contents .border-item .border-incident, #contents .border-item #footer .content-footer, #footer #contents .border-item .content-footer { display: flex; justify-content: center; }
+  #contents .border-item .center img, #contents .border-item .container img, #contents .border-item .container-tv img, #contents .border-item .point img, #contents .border-item .border img, #contents .border-item #incident .content-incident img, #incident #contents .border-item .content-incident img, #contents .border-item #incident .border-incident img, #incident #contents .border-item .border-incident img, #contents .border-item #footer .content-footer img, #footer #contents .border-item .content-footer img { padding: 10px 0 0; }
+  #contents .border-item p { padding-top: 10px; font-family: "Hiragino Kaku Gothic Pro" !important; }
+  #contents .border-items { width: 89% !important; float: none !important; margin: 0 auto !important; margin-top: 10px !important; }
+  #contents .border-items .centers { display: flex; justify-content: center; }
+  #contents .border-items img { padding: 17px 7px 0px 0px !important; }
+  #contents .border-items p { padding: 2px 0px !important; font-size: 15px !important; }
+  #contents .content { padding: 83px 14px 10px 25px !important; text-align: initial; font-size: 28px; font-family: "Hiragino Kaku Gothic Pro"; color: #555555; }
+  #contents .content br { display: none; }
+  #contents .caption { font-size: 16px; font-family: "Meiryo"; text-align: center; color: #525252; padding-bottom: 46px; }
+  /*-----------------end contents-------------------*/
+  /*-----------------incident-------------------*/
+  #incident .content-incident { width: auto; }
+  #incident .border-incident { height: 40px !important; padding: 0 0 8px 0 !important; width: auto !important; margin: 38px 23px 0px !important; }
+  #incident .border-incident p { font-size: 16px !important; color: #0f5c9b; }
+  /*-----------------end incident-------------------*/
+  /*--------------------service--------------------*/
+  .point { width: 15%; padding: 12px 0px 27px; }
+  #service { height: 792px; min-width: auto; }
+  #service .caption { font-size: 19px; font-family: "Hiragino Kaku Gothic Pro"; padding: 0px 35px 39px; }
+  #service table { display: flex; margin: 0px 21px !important; border-collapse: collapse; position: relative; }
+  #service table tbody td { padding: 15px 0px 14px 0px !important; font-size: 23px; font-family: "Hiragino Kaku Gothic Pro"; }
+  #service table tbody td:nth-child(1) { position: absolute; width: 100%; top: 68px; border: 1px solid #cccccc; }
+  #service table tbody td:nth-child(2) { position: absolute; width: 100%; top: 201px; border: 1px solid #cccccc; }
+  #service table tbody td:nth-child(3) { position: absolute; padding-left: 10px !important; width: -webkit-fill-available !important; top: 334px; border: 1px solid #cccccc; }
+  #service table tbody td:nth-child(3) br { display: none; }
+  #service table tbody th { font-size: 23px; font-family: "Hiragino Kaku Gothic Pro"; padding: 16px 0px; width: 100% !important; border: 1px solid #0e5b9a !important; position: absolute; }
+  #service table tbody th:nth-child(2) { top: 133px; }
+  #service table tbody th:nth-child(3) { top: 266px; }
+  #service table tbody th, #service table tbody tr, #service table tbody td { border: none; border-collapse: collapse; }
+  /*--------------------end service--------------------*/ }
+/*=======================fix responsive==================*/
+@media only screen and (max-width: 378px) and (min-width: 320px) { #contents .border .tv { width: 90% !important; padding: 5% !important; margin-top: 4px; }
+  #construction .item1, #construction .item2 { margin-top: 0px !important; } }
+@media only screen and (max-width: 499px) and (max-width: 424px) { #construction .item_construction .item img { width: 79%; }
+  #construction .item_construction .item_border { padding-top: 0px !important; } }
+@media only screen and (max-width: 400px) and (min-width: 320px) { #construction .item_construction .item_border { padding-top: 0px !important; }
+  #construction .item_construction .item img { width: 47%; }
+  #construction .item_construction .item3 img { width: 29%; } }
+@media only screen and (max-width: 500px) and (min-width: 400px) { #construction .item_construction .item_border { padding-top: 0px !important; }
+  #construction .item_construction .item img { width: 63%; }
+  #construction .item_construction .item3 { padding-top: 10px; }
+  #construction .item_construction .item3 img { padding-top: 15px !important; width: 28%; } }
+@media only screen and (max-width: 600px) and (min-width: 500px) { #construction .item_construction .item_border { padding-top: 10px !important; }
+  #construction .item3 { padding-top: 10px; }
+  #construction .item3 img { width: 29%; padding-top: 12px !important; } }
+@media only screen and (max-width: 768px) and (min-width: 600px) { #construction { height: 602px; }
+  #construction .item_construction .item_border { padding-top: 10px !important; }
+  #construction .item_construction .item_border .item1 { margin-top: 34px; }
+  #construction .item_construction .item_border .item2 { margin-top: 44px; }
+  #construction .item3 { padding-top: 10px; }
+  #construction .item3 img { padding-top: 45px !important; } }
+@media only screen and (-webkit-min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min--moz-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (-o-min-device-pixel-ratio: 2 / 1) and (max-width: 2000px), only screen and (min-device-pixel-ratio: 2) and (max-width: 2000px), only screen and (min-resolution: 192dpi) and (max-width: 2000px), only screen and (min-resolution: 2dppx) and (max-width: 2000px) { .holer { background: url("image_one@2x.png"); } }
+
+/*# sourceMappingURL=style.css.map */

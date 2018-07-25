@@ -1,0 +1,74 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: "游ゴシック", YuGothic, "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", "Meiryo", sans-serif;
+	font-size: 16px;
+}
+/*------------------@extend-----------------*/
+.center{
+	display: block;
+	margin: 0 auto;
+}
+.flex{
+	display: flex;
+	justify-content: center;
+}
+.title{
+	font-size: 26px;
+	font-family: "Meiryo";
+	text-align: center;		
+}
+.mail{
+	background-color: rgb(255, 237, 77);
+	width: 259px;
+	height: 43px;
+	z-index: 42;
+	img {
+		float: left;
+		width: 18px;
+		height: 14px;
+		padding-top: 13px;
+	}
+	p {
+		font-size: 14px;
+		padding-left: 10px;
+		font-family: "Meiryo";
+		color: rgb(253, 126, 0);
+		font-weight: bold;
+		line-height: 3.1;
+		text-align: left;
+	}
+}
+/*------------------end @extend---------------------------*/
+
+/*------------------@import header top--------------------*/
+@import 'header';
+
+/*------------------@import content index-----------------*/
+@import 'content-index';
+
+/*------------------@import content tv--------------------*/
+@import 'content-tv';
+
+/*------------------@import footer------------------------*/
+@import 'footer';
+
+/*------------------@import responsive index and tv-------*/
+@import 'responsive';
+
+
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2) and ( max-width: 2000px),
+only screen and (   min--moz-device-pixel-ratio: 2) and ( max-width: 2000px),
+only screen and (     -o-min-device-pixel-ratio: 2/1) and ( max-width: 2000px),
+only screen and (        min-device-pixel-ratio: 2) and ( max-width: 2000px),
+only screen and (                min-resolution: 192dpi) and ( max-width: 2000px),
+only screen and (                min-resolution: 2dppx) and ( max-width: 2000px) { 
+    .holer {
+        background:url("image_one@2x.png");
+    }
+}

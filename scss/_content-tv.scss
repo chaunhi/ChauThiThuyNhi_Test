@@ -1,0 +1,201 @@
+/*------------------mainimage-----------------*/
+#mainimage{
+	min-width: 950px;
+	height: 160px;
+	background:  url('../images/bg.png') no-repeat right top;
+	p{
+		font-size: 28px;
+		font-family: "Meiryo";
+		color: rgb(255, 255, 255);
+		line-height: 6.2;
+		text-align: center;
+		br{display: none;}
+	}
+}
+/*------------------top-title-----------------*/
+#top-title{	
+	min-width: 950px;
+	border-bottom: 1px solid #dddddd;
+	height: 37px;
+	.top-title {
+		margin: 0 auto;
+		width: 950px;	
+		font-size: 12px;
+		font-family: "Meiryo";
+		line-height:3;
+		a{
+			border-bottom: 1px solid #0c5999;
+			height: 25px;
+			float: left;
+			text-decoration: none;
+			color: #0c5999;
+		}
+	}
+}
+/*------------------service-----------------*/
+#service{ 
+	min-width: 950px;
+	height: 513px;
+	padding-bottom: 46px;
+	.title{
+		@extend .title;
+		padding-top: 62px;
+	}
+	.point{
+		@extend .center;
+		padding : 14px 0px 44px;
+	}
+	.caption{
+		font-size: 16px;
+		font-family: "Meiryo";
+		text-align: center;
+		color: #525252;
+		padding-bottom: 46px;
+	}
+	table{
+		margin: 0 auto;
+		border-collapse: collapse;
+		tbody{width: 950px;
+			td{
+				font-size: 16px;
+				font-family: "Meiryo";
+				padding: 0px 0px 84px 17px;
+				&:nth-child(3){padding-top: 16px !important;}
+			}
+			th{
+				background-color: #0e5b9a;
+				font-size: 16px;
+				font-family: "Meiryo";
+				font-weight: normal;
+				color: rgb(255, 255, 255);
+				padding: 16px 0px;
+				&:nth-child(1){
+					width: 259px;
+				}
+				&:nth-child(2){
+					width: 219px;
+				}
+				&:nth-child(3){
+					width: 472px;
+				}
+			}
+			th,tr, td {
+				border: 1px solid #cccccc; 
+				border-collapse: collapse; 
+			}
+		}
+	}
+}
+/*------------------contents-----------------*/
+#contents{
+	clear: both;
+	min-width: 950px;
+	height: 1460px;
+	background-color: #eeeeee;
+	.title{
+		@extend .title;
+		padding-top: 62px;
+	}
+	.point{
+		@extend .center;
+		padding : 16px 0px 44px 0px;		
+	}
+	.border:nth-child(3) {
+		height: 251px !important;
+	}
+	.border{
+		@extend .center;
+		height: 210px;
+		width: 950px;
+		background-color: #ffffff;
+		margin-bottom: 30px;
+		.left{float: left;}
+		.number{
+			float: left;
+			padding: 25px 10px 0px 25px;
+		}
+		.name{
+			padding-top: 30px;
+			font-size: 23px;
+			color: #0e5b9a; 
+			font-weight: 500;
+		}
+		.content{
+			padding-top: 29px;
+			padding-left: 25px;
+			font-size: 16px;
+			font-family: "Meiryo";
+		}
+		.light{
+			color: #0e5b9a;
+			font-weight: 500px;
+		}
+		.tv{
+			float: right;
+			padding: 25px;
+		}
+		.border-item{
+			float: left;
+			border: 1px solid #0e5b9a;
+			width: 284px;
+			height: 48px;
+			margin: 30px 0px 0px 25px;
+			img{
+				padding: 5px 0px 0px 32px;
+			}
+			p{
+				font-size: 10px;
+				font-family: "Meiryo";
+				color: rgb(14, 91, 154);
+				text-align: center;
+				line-height: 5px;
+			}
+		}
+		.border-items{
+			@extend .mail;
+			float: left;
+			width: 280px;
+			height: 50px;
+			padding-left: 15px;
+			margin: 30px 0px 0px 14px;
+			img{padding: 17px 12px 0px 6px;}
+			p{padding-top: 2px;font-size: 16px;}
+		}
+	}
+}
+/*------------------incident-----------------*/
+#incident{
+	clear: both;
+	height: 298px;
+	.content-incident{
+		display: flow-root;
+		height: 298px;
+		width: 950px;
+		@extend .center;
+	}
+	.border-incident{
+		@extend .center;
+		border: 1px solid #0f5c9b;
+		width: 538px;
+		height: 58px;
+		padding-top: 10px;
+		margin-top: 62px;
+		p{
+			line-height: 52px;
+			font-size: 24px;
+			color: #0f5c9b;
+			font-weight: bold;
+			text-align: center;
+		}
+	}
+	.text{text-align: center;
+		font-size: 16px;
+		line-height: 23px;
+		padding-bottom: 82px;
+		padding-top: 45px;
+		span{font-size: 22px;
+			color:  #0f5c9b;}
+		}		
+	}
+
+/*------------------end content tv--------------------*/
